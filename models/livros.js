@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 const livrosSchema = new mongoose.Schema(
   {
-    Nome: { type: String, required: true, trim: true },
-    Data: { type: String, required: true, trim: true },
-    Editora: { type: Date, required: true }
+    nome: { type: String, required: true, trim: true },
+    data: { type: String, required: true, trim: true },
+    editora: { type: String, required: true, trim: true }
   },
   {
     timestamps: true
