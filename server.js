@@ -21,13 +21,13 @@ app.use('/api/entries', require('./routes/livrosRoutes'));
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
-    console.log('✅ MongoDB conectado com sucesso');
+    console.log(' MongoDB conectado com sucesso');
 
     const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
-      console.log(`🚀 Servidor rodando na porta ${PORT}`);
+      console.log(` Servidor rodando na porta ${PORT}`);
     });
   })
   .catch((err) => {
-    console.error('❌ Erro ao conectar no MongoDB:', err);
+    console.error(' Erro ao conectar no MongoDB:', err);
   });
